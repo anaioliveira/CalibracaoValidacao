@@ -1,17 +1,17 @@
 #TIME KEYWORDS
-BEGIN_DATE : 2008 01 01 00 00 00
-END_DATE : 2013 01 01 00 00 00
+BEGIN_DATE : 1985 01 01 00 00 00
+END_DATE : 1988 01 01 00 00 00
 
 TIME_STEP : 1 #(1 - DAILY, 2 - MONTHLY)
 
-OBSERVED_DATA : D:/Ana/Aplica/2_HazRunOff/MOHID/Severn/Validation/Flow/observed/
+OBSERVED_DATA : A:/Ana/Aplica/Scripts/CalibracaoValidacao/In/Observed/
 OBSERVED_COLUMN : 2
 
-MODELLED_DATA : D:/Ana/Aplica/1_AguaMod/Simulacoes/MOHID_Linux/Oeste/Results/Timeseries/
+MODELLED_DATA : A:/Ana/Aplica/Scripts/CalibracaoValidacao/In/Model/
 MODELLED_COLUMN : 14
-FOLDER_NAME_DATE_TYPE : YYYYMMDD
+FOLDER_NAME_DATE_TYPE : YYYYMM
 
 STATIONS_LIST : all
 TIMESERIES_SUFFIX : SRN
 
-GRAPHS_FOLDER : D:/Ana/Aplica/2_HazRunOff/MOHID/Severn/Validation/Flow/
+GRAPHS_FOLDER : A:/Ana/Aplica/Scripts/CalibracaoValidacao/Out/

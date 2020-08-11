@@ -1,0 +1,26 @@
+O script pretende fazer os gráficos para comparar os valores de caudal 
+modelados e observados em diversos pontos de diferentes rios.
+
+Cada ponto corresponde a uma estação de medição de caudal e para cada estação
+ são feitos 2 gráficos:
+ - comparação dos caudais ao longo do tempo (valores modelados e observados no 
+ eixo vertical e datas no eixo horizontal).
+ - comparação dos caudais observados (eixo horizontal) e medidos (eixo vertical) 
+ com cálculo do parâmetro estatístico R2.
+ 
+1. O script vai à pasta In/Model e faz um filtro com as datas para encontrar as pastas
+com os meses que se pretendem analisar.
+2. Dentro destas pastas existem ficheiros do tipo texto com o nome "Node_xxxx.srn". Estes 
+são os ficheiros com os valores modelados.
+3. Para cada ficheiro dos valores modelados o script procura a estação com os valores obsevados
+ correspondente na pasta In/Observed. O nome destes ficheiros é "estxxxx.csv" e os codigos aqui
+ assinalados com xxxx são a identificação dos ficheiros que se comparam.
+4. Com os valores de cada ficheiro são desenhados os gráficos.
+
+
+No caso de não existir a estação correspondente ao "Node_xxxx.srn" é escrita a mesangem:
+        "Station has not a match."
+        
+No caso da estação existir mas não ter valores no período em análise é escrita a mensagem:
+        "This station hasn't observed values to the analyzed period!"
+        "Impossible to graph R2 for this station. Observed values do not exist."

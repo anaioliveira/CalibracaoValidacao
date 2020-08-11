@@ -43,7 +43,7 @@ def manage_dates(date_original_string, py, mo):
     elif py == 0 and mo == 1:
         return mohid_date
     else:
-        print ('Attetion!! You have an error in dates variables!!')
+        print ('Attention!! You have an error in dates variables!!')
 
 def check_folders(begin_python_date, end_python_date, date_type, modelled_data):
     
